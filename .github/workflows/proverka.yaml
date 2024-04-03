@@ -18,7 +18,7 @@ jobs:
       run: dotnet restore
 
     - name: Install FxCopAnalyzers
-      run: dotnet add ApiSocialNetwork/ApiSocialNetwork.csproj package Microsoft.CodeAnalysis.FxCopAnalyzers
+      run: dotnet add Api_Smart_Counters/Api_Smart_Counters.csproj package Microsoft.CodeAnalysis.FxCopAnalyzers
 
     - name: Build with FxCopAnalyzers
       run: dotnet build --no-restore -c Release
